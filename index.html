@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="t3offTk007ECMolUGHI5AyL5Ko1GciIVq7XBUzgt3Xg"/>
+  
 <title>TRACKRA – Smart Map</title>
 
 <!-- Leaflet -->
@@ -151,7 +151,7 @@ footer{padding:15px;background:#020617;text-align:center;}
   <p>TRACKRA highlights real-world road hazards and traffic to make travel safer.</p>
 </section>
 
-<footer>© 2026 TRACKRA</footer>
+
 
 <!-- JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -303,5 +303,14 @@ function checkAccident(){
 </script>
 
 </body>
+  <script>
+    function toggleMenu() {
+    var navbarLinks = document.getElementById('navbarLinks');
+    navbarLinks.classList.toggle('active');
+}
+</script>
+<script>
+  document.write("© " + new Date().getFullYear() + " Rohit2AI & Groups. All Rights Reserved.");
+</script>
 </html>
 
