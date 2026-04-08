@@ -97,13 +97,102 @@ nav a:hover{color:#38bdf8;}
 }
 
 /* ABOUT + FOOTER */
-#about{padding:80px 20px;background:#020617;text-align:center;}
+/* SECTION */
+#about {
+  padding: 80px 20px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+/* TITLE */
+#about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* CONTAINER */
+.about-container {
+  display: flex;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* LEFT & RIGHT BOX */
+.about-left,
+.about-right {
+  flex: 1 1 42%;
+  min-width: 280px;
+  background: rgba(255,255,255,0.05);
+  padding: 18px;
+  border-radius: 12px;
+  text-align: left;
+  line-height: 1.7;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* DIVIDER EFFECT */
+.about-left {
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+/* LIST STYLE */
+.about-right ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.about-right li {
+  margin-bottom: 8px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+  }
+
+  .about-left {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  #about {
+    padding: 60px 15px;
+  }
+
+  #about h2 {
+    font-size: 24px;
+  }
+
+  .about-left,
+  .about-right {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .about-container {
+    gap: 20px;
+  }
+}
+
 footer{padding:15px;background:#020617;text-align:center;}
 
 @media(max-width:768px){
   .hero h2{font-size:34px;}
   #map{height:calc(100vh - 300px);}
 }
+
+
 </style>
 </head>
 
@@ -151,7 +240,49 @@ footer{padding:15px;background:#020617;text-align:center;}
 
 <section id="about">
   <h2>About TRACKRA</h2>
-  <p>TRACKRA highlights real-world road hazards and traffic to make travel safer.</p>
+
+  <div class="about-container">
+
+    <!-- LEFT SIDE -->
+    <div class="about-left">
+      <p>
+        TRACKRA is an intelligent map-based web application designed to enhance road safety and real-time navigation by visualizing critical road conditions directly on live maps. The system focuses on identifying and representing real-world road hazards such as potholes, waterlogging, speed breakers, and traffic congestion using road-aligned visual overlays instead of traditional area-based representations.
+      </p>
+
+      <p>
+        Unlike conventional mapping solutions, TRACKRA emphasizes road-level intelligence by integrating geospatial data processing, real-time location tracking, and dynamic visualization techniques. The platform enables users to search locations, access nearby essential services (including hospitals, petrol pumps, and police stations), and view contextual environmental data such as weather conditions associated with specific geographic coordinates.
+      </p>
+
+      <p>
+        The primary objective of TRACKRA is to bridge the gap between static digital maps and real-world road conditions by providing an interactive, user-centric, and scalable solution for smarter mobility and safer travel.
+      </p>
+
+      <p>
+        This project has been independently conceptualized, designed, and developed as part of an innovative exploration into intelligent map-based systems.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
+      <p>
+        <b>Rohit Kumar (Rohit2AI)</b> is the Founder & Developer of this project and a student of World College of Technology and Management. The complete ownership of TRACKRA, including its idea, design, structure, and overall system, belongs solely to him. This is an independently conceptualized and developed system.”
+      </p>
+
+      <p><b>All rights reserved.</b></p>
+
+      <ul>
+        <li>Core idea and problem-solving approach</li>
+        <li>System architecture and feature design</li>
+        <li>User interface and interaction model</li>
+        <li>Road-based visualization methodology</li>
+      </ul>
+
+      <p>
+        Any unauthorized reproduction, duplication, modification, or commercial use of this system, in part or whole, without explicit permission from the creator is strictly prohibited.
+      </p>
+    </div>
+
+  </div>
 </section>
 
 
