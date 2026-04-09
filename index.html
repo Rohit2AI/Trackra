@@ -192,6 +192,68 @@ footer{padding:15px;background:#020617;text-align:center;}
   #map{height:calc(100vh - 300px);}
 }
 
+  /* Team members are assigned by Rohit Kumar. The owner reserves full rights to remove or replace any member at any time, particularly in cases where a member acts against the project, its objectives, or its integrity. */
+
+/* SECTION */
+#team {
+  padding: 80px 20px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+/* TITLE */
+#team h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* CONTAINER */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* CARD */
+.team-card {
+  flex: 1 1 200px;
+  max-width: 220px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.team-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* TEXT */
+.team-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.team-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  #team h2 {
+    font-size: 24px;
+  }
+
+  .team-card {
+    max-width: 100%;
+  }
+}
+
 
 </style>
 </head>
@@ -267,9 +329,11 @@ footer{padding:15px;background:#020617;text-align:center;}
       <p>
         <b>Rohit Kumar (Rohit2AI)</b> is the Founder & Developer of this project and a student of World College of Technology and Management. The complete ownership of TRACKRA, including its idea, design, structure, and overall system, belongs solely to him. This is an independently conceptualized and developed system.”
       </p>
-
-      <p><b>All rights reserved.</b></p>
-
+        
+      <br>
+/* Team members are assigned by Rohit Kumar. The owner reserves full rights to remove or replace any member at any time, particularly in cases where a member acts against the project, its objectives, or its integrity. */
+      <p><b>All rights reserved.</b><br>
+      The concept, design, structure, and implementation of TRACKRA are exclusively owned by <b>Rohit Kumar (Rohit2AI).</b></p>
       <ul>
         <li>Core idea and problem-solving approach</li>
         <li>System architecture and feature design</li>
@@ -285,7 +349,38 @@ footer{padding:15px;background:#020617;text-align:center;}
   </div>
 </section>
 
+<section id="team">
+  <h2>Our Team</h2>
 
+  <div class="team-container">
+
+    <div class="team-card">
+      <h3>Rohit Kumar</h3>
+      <p>Founder & Developer</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Ayush Kumar</h3>
+      <p>Team Lead</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Prateek Pandey</h3>
+      <p>Marketing & Advertising</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Upender</h3>
+      <p>UI/UX Designer</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Ajit Kumar</h3>
+      <p>Research & Data Analyst</p>
+    </div>
+
+  </div>
+</section>
 
 <!-- JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
